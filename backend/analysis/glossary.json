@@ -4,7 +4,7 @@
     "expected_range": {
       "term": "80% expected range",
       "plain": "The band tomorrow's close should land in about 4 days out of 5, based on how much this stock has actually moved over the last 20 sessions.",
-      "why": "It's the only number in this app with hard evidence behind it: this exact construction covered 80.5% of 9,620 historical next-day moves. It says nothing about direction — only size."
+      "why": "It's the only number in this app with hard evidence behind it: this exact construction covered 80.5% of 9,620 historical next-day moves. It says nothing about direction - only size."
     },
     "daily_sigma": {
       "term": "Typical daily move (1σ)",
@@ -19,16 +19,16 @@
     "move_z": {
       "term": "Today's move in σ",
       "plain": "Today's move divided by the typical daily move. 0.5 = quiet day, 2.0 = unusually large day (rarer than ~95% of days).",
-      "why": "Answers 'is this drop actually a big deal for THIS stock?' — a 2% day is normal for COIN and wild for KO."
+      "why": "Answers 'is this drop actually a big deal for THIS stock?' - a 2% day is normal for COIN and wild for KO."
     },
     "band_coverage": {
       "term": "Band coverage (backtest)",
       "plain": "The percent of days in a 2-year, 9,620-row backtest where this exact band construction contained the next day's close. Target: 80%.",
-      "why": "This is the receipt. If coverage were 60% or 95%, the band would be miscalibrated. It's 77.5–83% across all 20 tested tickers, 80.5% overall."
+      "why": "This is the receipt. If coverage were 60% or 95%, the band would be miscalibrated. It's 77.5-83% across all 20 tested tickers, 80.5% overall."
     },
     "setup_score": {
       "term": "Setup Score",
-      "plain": "A 0–100 rollup of observable signals (momentum, news, options positioning, analyst shifts, social chatter). 50 = neutral, higher = more bullishly aligned.",
+      "plain": "A 0-100 rollup of observable signals (momentum, news, options positioning, analyst shifts, social chatter). 50 = neutral, higher = more bullishly aligned.",
       "why": "A structured way to see how the usual signals line up. It does NOT predict tomorrow: the same signal families failed direction prediction across ~9,600 backtested calls."
     },
     "lean": {
@@ -39,7 +39,7 @@
     "momentum": {
       "term": "Momentum alignment",
       "plain": "Where price sits vs its own 20-day and 50-day averages, with extremes damped. Above both = positive; below both = negative.",
-      "why": "The classic trend snapshot. Note: at a 1-day horizon this signal predicted nothing in our backtest — it's context, not an edge."
+      "why": "The classic trend snapshot. Note: at a 1-day horizon this signal predicted nothing in our backtest - it's context, not an edge."
     },
     "news_sentiment": {
       "term": "News sentiment",
@@ -53,7 +53,7 @@
     },
     "implied_move": {
       "term": "Implied move",
-      "plain": "What the options market charges for an at-the-money straddle at the nearest expiry, as ±% of the stock price — its own version of an expected range.",
+      "plain": "What the options market charges for an at-the-money straddle at the nearest expiry, as ±% of the stock price - its own version of an expected range.",
       "why": "Compare with our 80% range: options pricing a much bigger move than realized vol usually means an event (earnings) is in the window."
     },
     "atm_iv": {
@@ -64,7 +64,7 @@
     "analyst_trend": {
       "term": "Analyst recommendation trend",
       "plain": "How the buy/hold/sell mix shifted vs last month. Shifts matter; the level is mostly already in the price.",
-      "why": "Rating CHANGES carry residual information (experiment decision D12). We deliberately don't show price targets — they weren't available from any secured source, and levels are stale anyway."
+      "why": "Rating CHANGES carry residual information (experiment decision D12). We deliberately don't show price targets - they weren't available from any secured source, and levels are stale anyway."
     },
     "social_buzz": {
       "term": "Social buzz",
@@ -74,7 +74,7 @@
     "vol_factor": {
       "term": "Volatility conviction factor",
       "plain": "When current 20-day vol is calmer than its 60-day baseline, signal alignment counts slightly more (×up to 1.15); in turbulence, less (×down to 0.85).",
-      "why": "Vol regime isn't bullish or bearish — it's how much to trust the other signals. That's why it scales the score instead of adding to it."
+      "why": "Vol regime isn't bullish or bearish - it's how much to trust the other signals. That's why it scales the score instead of adding to it."
     },
     "pe_ttm": {
       "term": "P/E (trailing 12m)",
@@ -88,7 +88,7 @@
     },
     "market_cap": {
       "term": "Market cap",
-      "plain": "Share price × shares outstanding — the market's price for the whole company.",
+      "plain": "Share price × shares outstanding - the market's price for the whole company.",
       "why": "Sets the size regime: mega-caps move on macro, small caps on their own news."
     },
     "revenue_growth": {
@@ -114,7 +114,7 @@
     "dividend_yield": {
       "term": "Dividend yield",
       "plain": "Annual dividends as a % of today's price.",
-      "why": "Income context — relevant to your income-sleeve overlap checks."
+      "why": "Income context - relevant to your income-sleeve overlap checks."
     },
     "beta": {
       "term": "Beta (vs SPY, 60d)",
@@ -144,22 +144,22 @@
     "volume_z": {
       "term": "Volume z-score",
       "plain": "Yesterday's trading volume vs its 20-day average, in standard deviations.",
-      "why": "Abnormal attention. |z| > 2 means something drew a crowd — check the headlines."
+      "why": "Abnormal attention. |z| > 2 means something drew a crowd - check the headlines."
     },
     "sma20_dist": {
       "term": "Distance from 20-day average",
       "plain": "How far price is above (+) or below (−) its 20-day moving average, in %.",
-      "why": "Short-term stretch: far above = extended, far below = washed out. Not predictive at 1 day — measured."
+      "why": "Short-term stretch: far above = extended, far below = washed out. Not predictive at 1 day - measured."
     },
     "sma50_dist": {
       "term": "Distance from 50-day average",
-      "plain": "Same as above with a 50-day window — the medium-term trend line most chartists watch.",
+      "plain": "Same as above with a 50-day window - the medium-term trend line most chartists watch.",
       "why": "Crossing it is a widely watched (and widely front-run) signal."
     },
     "put_call_none": {
       "term": "Put/call unavailable",
       "plain": "This ticker has no listed options (common for trust ETFs like PHYS/PSLV), or volume is still ~zero this session.",
-      "why": "Absence of options data is normal for some instruments — the score just reweights around it."
+      "why": "Absence of options data is normal for some instruments - the score just reweights around it."
     },
     "buzz": {
       "term": "News buzz",
@@ -184,17 +184,17 @@
     "watchlist_tags": {
       "term": "Watchlist tags",
       "plain": "Free-form labels on research targets (e.g. 'earnings-play', 'income-candidate').",
-      "why": "Slice the watchlist your way — separate from the Portfolio app's income-focused list."
+      "why": "Slice the watchlist your way - separate from the Portfolio app's income-focused list."
     },
     "coverage_target": {
       "term": "Coverage target (80%)",
-      "plain": "The band is built to contain the next close 80% of the time — no more, no less.",
+      "plain": "The band is built to contain the next close 80% of the time - no more, no less.",
       "why": "A 100%-coverage band would be uselessly wide. 80% is the deliberate trade: tight enough to mean something, wide enough to be right 4 days in 5."
     },
     "asset_type": {
       "term": "Asset type",
-      "plain": "Equity, ETF, or trust — drives which sections apply (ETFs skip fundamentals/analyst sections).",
-      "why": "An ETF with no earnings or analyst coverage isn't 'missing data' — those concepts don't apply."
+      "plain": "Equity, ETF, or trust - drives which sections apply (ETFs skip fundamentals/analyst sections).",
+      "why": "An ETF with no earnings or analyst coverage isn't 'missing data' - those concepts don't apply."
     },
     "earnings_move": {
       "term": "Expected earnings move",
@@ -203,28 +203,28 @@
     },
     "pead": {
       "term": "Post-earnings drift (PEAD)",
-      "plain": "After a big earnings surprise, prices have historically kept drifting in the surprise's direction for roughly 60 trading days — one of the most-replicated patterns in finance research.",
-      "why": "Context for the weeks after a report: a big beat that's still drifting is behaving normally. A documented historical tendency — not a guarantee, and it can stop working."
+      "plain": "After a big earnings surprise, prices have historically kept drifting in the surprise's direction for roughly 60 trading days - one of the most-replicated patterns in finance research.",
+      "why": "Context for the weeks after a report: a big beat that's still drifting is behaving normally. A documented historical tendency - not a guarantee, and it can stop working."
     },
     "insiders_cluster": {
       "term": "Insider cluster buy",
-      "plain": "Two or more different insiders bought stock on the open market within about two weeks — filtered to real purchases (code P), excluding stock awards, option exercises, and tax sales.",
-      "why": "Research (Cohen–Malloy–Pomorski) shows routine insider trades mean ~nothing, while clustered open-market buys carried real information — on a MULTI-MONTH horizon, not next week."
+      "plain": "Two or more different insiders bought stock on the open market within about two weeks - filtered to real purchases (code P), excluding stock awards, option exercises, and tax sales.",
+      "why": "Research (Cohen-Malloy-Pomorski) shows routine insider trades mean ~nothing, while clustered open-market buys carried real information - on a MULTI-MONTH horizon, not next week."
     },
     "short_interest": {
       "term": "Short interest",
-      "plain": "How many shares are currently sold short, per FINRA's official bi-monthly report, shown as a % of shares outstanding (true 'float' data isn't freely available — we label honestly).",
+      "plain": "How many shares are currently sold short, per FINRA's official bi-monthly report, shown as a % of shares outstanding (true 'float' data isn't freely available - we label honestly).",
       "why": "High and rising short interest = a crowded bet against the stock; it can mean informed skepticism, squeeze fuel, or both. The data lags by days-to-weeks by design."
     },
     "days_to_cover": {
       "term": "Days to cover",
-      "plain": "Short interest divided by average daily volume — how many normal trading days shorts would need to buy their way out.",
+      "plain": "Short interest divided by average daily volume - how many normal trading days shorts would need to buy their way out.",
       "why": "The squeeze-mechanics number: 5+ days means the exit is narrow if the crowd is ever forced to leave at once."
     },
     "band_engine": {
       "term": "Band engine",
       "plain": "Which volatility estimator builds the 80% range: flat 20-day (default), EWMA (weights recent days more), or conformal (empirical quantile, no distribution assumed).",
-      "why": "Each engine shows its measured backtest coverage in Settings. Flat-20d won the validation — the others are offered because the evidence is displayed, not hidden."
+      "why": "Each engine shows its measured backtest coverage in Settings. Flat-20d won the validation - the others are offered because the evidence is displayed, not hidden."
     },
     "diversification_ratio": {
       "term": "Diversification ratio",
@@ -233,13 +233,13 @@
     },
     "premium_lens": {
       "term": "Premium seller's lens",
-      "plain": "For each covered-call or cash-secured-put candidate: what the options market says the breach risk is (its delta) next to what this stock's own 2-year history says (validated to ±6–9.5pp at 1–5 week horizons). Positive edge = you're being paid more than the historical risk costs.",
-      "why": "This is the variance risk premium made visible per strike — the documented, persistent payment for BEARING risk. It is the opposite of predicting direction: assignment still happens, tails are worse than they look (measured, shown), and earnings windows void the math (flagged)."
+      "plain": "For each covered-call or cash-secured-put candidate: what the options market says the breach risk is (its delta) next to what this stock's own 2-year history says (validated to ±6-9.5pp at 1-5 week horizons). Positive edge = you're being paid more than the historical risk costs.",
+      "why": "This is the variance risk premium made visible per strike - the documented, persistent payment for BEARING risk. It is the opposite of predicting direction: assignment still happens, tails are worse than they look (measured, shown), and earnings windows void the math (flagged)."
     },
     "vrp": {
       "term": "Variance risk premium (VRP)",
       "plain": "The app records the options-implied move each time you analyze a ticker, then checks what actually happened. Ratio above 1 = options systematically overpaid realized moves (favorable climate for sellers); below 1 = underpaid.",
-      "why": "Nobody sells this history free — the app builds it by being used. Thin at first, honest about it, more valuable every week."
+      "why": "Nobody sells this history free - the app builds it by being used. Thin at first, honest about it, more valuable every week."
     },
     "skew_25d": {
       "term": "25Δ skew",
@@ -254,17 +254,42 @@
     "bottom_context": {
       "term": "Bottom context",
       "plain": "Descriptive facts about where price sits: drawdown from the 52-week high, position in the yearly range, stretch vs the 200-day average, and whether insiders are buying into the weakness.",
-      "why": "Nothing can validate 'the absolute bottom' — that IS direction prediction, the thing ~9,600 backtests killed. But you should never buy without seeing whether you're buying weakness or chasing strength; this panel guarantees you see it."
+      "why": "Nothing can validate 'the absolute bottom' - that IS direction prediction, the thing ~9,600 backtests killed. But you should never buy without seeing whether you're buying weakness or chasing strength; this panel guarantees you see it."
     },
     "research_stance": {
       "term": "Claude research stance",
-      "plain": "Claude's reasoned buy/sell/hold/trim/watch call from your latest discussion session — with a horizon and one-line justification, dated, and marked stale when the data has moved since.",
-      "why": "The app itself never computes buy/sell/hold: its signals demonstrably can't call direction (~9,600 backtested predictions). A stance from a full research session — valuation, thesis, risk, news — is a different kind of judgment, and it ages in plain sight instead of pretending to be current."
+      "plain": "Claude's reasoned buy/sell/hold/trim/watch call from your latest discussion session - with a horizon and one-line justification, dated, and marked stale when the data has moved since.",
+      "why": "The app itself never computes buy/sell/hold: its signals demonstrably can't call direction (~9,600 backtested predictions). A stance from a full research session - valuation, thesis, risk, news - is a different kind of judgment, and it ages in plain sight instead of pretending to be current."
     },
     "score_history": {
       "term": "Score history",
       "plain": "The Setup Score recorded each time you analyzed this ticker. Grows as you use the tool.",
-      "why": "There's no 30-day backfill because point-in-time sentiment/options history doesn't exist — a reconstructed 'history' would be fiction. This one is real."
+      "why": "There's no 30-day backfill because point-in-time sentiment/options history doesn't exist - a reconstructed 'history' would be fiction. This one is real."
+    },
+    "discover_tab": {
+      "term": "Discover tab",
+      "plain": "A screen to scan the market using our backtested range metrics, setup scores, and volume spikes instead of chasing standard hype lists.",
+      "why": "Helps surface interesting setups based on quantitative signals rather than popular social noise."
+    },
+    "value_lens": {
+      "term": "Value lens",
+      "plain": "A dedicated view focusing on fundamental valuation metrics like P/FCF, dividend-to-FCF coverage, and ROIC, alongside standard valuation ratios.",
+      "why": "Cuts through short-term price action to show whether a company generates actual cash flow relative to what you pay for it."
+    },
+    "p_fcf": {
+      "term": "Price to Free Cash Flow (P/FCF)",
+      "plain": "Share price divided by free cash flow per share over the trailing 12 months.",
+      "why": "Often superior to P/E because cash flow is harder to mask with accounting adjustments than net income."
+    },
+    "div_fcf": {
+      "term": "Dividends ÷ FCF",
+      "plain": "Total cash paid out in dividends divided by free cash flow.",
+      "why": "Shows whether the dividend is safely covered by actual cash generation or funded by debt and borrowing."
+    },
+    "roic": {
+      "term": "Return on Invested Capital (ROIC)",
+      "plain": "Operating profit after tax divided by total debt and equity capital.",
+      "why": "Measures how efficiently a company allocates capital to generate profitable returns on its core business."
     }
   }
 }
